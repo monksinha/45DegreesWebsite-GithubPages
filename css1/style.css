@@ -1039,9 +1039,12 @@ box-shadow: 5px 5px 0px #20AE61;
 }
 .team-des {
   background-color: white;
+padding-right: 30px;
+  padding-left: 30px;
 }
 .team-social {
   background-color: #ddd;
+  align: center; 
 }
 .team-name {
   margin-top: 0px;

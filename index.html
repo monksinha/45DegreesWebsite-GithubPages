@@ -23,9 +23,13 @@ table, th, td {
 	 padding : 10px; 
 	
 }
+
+#js-replace-content {
+margin :100px;
+}
 </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse">
   <div class="fix-header" id="home">
     <div class="w-container">
       <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400"></div>
@@ -56,12 +60,12 @@ table, th, td {
 
 
           <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-            <div class="w-container nav">
+            <div class="w-container nav navbar-collapse">
               <nav class="w-nav-menu nav-menu" role="navigation">
 
                 <a class="w-nav-link menu-li" href="#home">HOME</a>
                 <a class="w-nav-link menu-li" href="#about">ABOUT</a>
-                <a class="w-nav-link menu-li" href="#service">SERVICES</a>
+                <a class="w-nav-link menu-li" id="quickFix" href="#utkarshFocus">SERVICES</a>
 				<!--
                 <a class="w-nav-link menu-li" href="#portfolio">PORTFOLIO</a>
                 -->
@@ -96,7 +100,7 @@ table, th, td {
         <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
         <label for="button-1" class="button-label-1"></label>
         
-		<!--
+		
         <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
         <label for="button-2" class="button-label-2"></label>
         
@@ -105,26 +109,28 @@ table, th, td {
         
         <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
         <label for="button-4" class="button-label-4"></label>
-        
+        <!--
         <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
         <label for="button-5" class="button-label-5"></label>
         -->
 		
         <label for="button-1" class="sp-arrow sp-a1"></label>
-        <!--
+        
 		<label for="button-2" class="sp-arrow sp-a2"></label>
         <label for="button-3" class="sp-arrow sp-a3"></label>
         <label for="button-4" class="sp-arrow sp-a4"></label>
+		<!--
         <label for="button-5" class="sp-arrow sp-a5"></label>
         -->
         <div class="sp-content">
           <div class="sp-parallax-bg"></div>
           <ul class="sp-slider clearfix">
             <li><img src="images/slider/coverPic.png" alt="image01" /></li>
-            <!--
-			<li><img src="images/slider/slider2.png" alt="image02" /></li>
-            <li><img src="images/slider/slider3.png" alt="image03" /></li>
-            <li><img src="images/slider/slider4.png" alt="image04" /></li>
+            
+			<li><img src="images/slider/sliderT1.jpg" alt="image02" /></li>
+            <li><img src="images/slider/sliderT2.jpg" alt="image03" /></li>
+            <li><img src="images/slider/sliderT3.jpg" alt="image04" /></li>
+			<!--
             <li><img src="images/slider/slider5.png" alt="image05" /></li>
             -->
 		  </ul>
@@ -160,7 +166,7 @@ We believe that in today’s competitive world marketing is the backbone for the
 45 Degrees Marketing Services has designed a unique range of marketing services specially focused on Start ups and small businesses. With our strong network of experts and seasoned in-house team we provide great advantage to emerging businesses.
 
           </p>
-          <img class="about-img" src="images/about.png"
+          <img class="about-img" src="images/slider/sliderT2.jpg"
           alt="52de15aa5d3566c14300015e_about.png">
         </div>
       </div>
@@ -213,7 +219,7 @@ We believe that in today’s competitive world marketing is the backbone for the
 			
             <div class="w-col w-col-6 exp-col2">
               <div class="col2-div">
-                <img src="images/who-we-are.png">
+                <img src="images/slider/sliderT3.jpg">
               </div>
             </div>
           </div>
@@ -264,7 +270,7 @@ We believe that in today’s competitive world marketing is the backbone for the
        // Service section 
        //////////////////////////////////////////////////////////-->
 
-
+<!--
   <section class="service-parlex" id="service">
     <section class="parlex-back">
       <div class="w-container">
@@ -387,7 +393,7 @@ We believe that in today’s competitive world marketing is the backbone for the
       </div>
     </section>
   </section>
-
+-->
 <!--///////////////////////////////////////////////////////
        // End Service section 
        //////////////////////////////////////////////////////////-->
@@ -396,49 +402,70 @@ We believe that in today’s competitive world marketing is the backbone for the
 <!--///////////////////////////////////////////////////////
        // Process section 
        //////////////////////////////////////////////////////////-->
-
+<div id = "utkarshFocus"></div>
   <div class="process-parlex">
     <div class="parlex2-back">
       <div class="w-container">
         <div class="wrap">
           <div class="process">
-            <h1 class="our-process-heading">OUR PROCESS</h1>
-            <div class="sepreater"></div>
+		  <div id = "utkarshFocus1">
+            <h1 class="our-process-heading">SERVICES</h1>
+           </div>
+			<div class="sepreater"></div>
           </div>
           <div class="process-text">
-            <div class="process-text">Our process is straight forward, simple, &amp; successful.</div>
+		  
+            <div class="process-text">
+			   <div id="js-replace-content">
+			We offer unique range of marketing and sales support services specially designed keeping in mind needs and constraints of emerging businesses. We help our clients get most out of their marketing investments and efforts. We convert your vision into achievable goals and help you maximize your business potential.
+             </br></br>
+			We understand that as a start up or small business you don’t need all marketing activities throughout the year. We customize step by step most suitable service suite for your business so that you don’t end up spending more than required. 
+               </div>
+		  </div>	
+			             
             <div class="w-row">
               <div class="w-col w-col-3">
                 <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+				<div id="sales">
                    <a href="#set-1" class="hi-icon hi-icon-locked">Security</a>
                 </div>
-                <h4 class="our-process-sys">BRAINSTORM</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+				   </div>
+                <h4 class="our-process-sys">Sales Support and Business Development</h4>
+                <p class="process-paragraph">            </p>
               </div>
+			  
+			  
               <div class="w-col w-col-3">
                 <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+				<div id="content">
           <a href="#set-1" class="hi-icon hi-icon-mobile">Mobile</a>
+		  </div>
         </div>
-                <h4 class="our-process-sys">PLAN</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                <h4 class="our-process-sys">Content and Communication</h4>
+                <p class="process-paragraph">            </p>
               </div>
+			  
+			  
+			  
               <div class="w-col w-col-3">
                 <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+				<div id="brand">
           <a href="#set-1" class="hi-icon hi-icon-screen">Desktop</a>
+		  </div>
         </div>
-                <h4 class="our-process-sys">DESIGN</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                <h4 class="our-process-sys">Branding and Positioning </h4>
+                <p class="process-paragraph">            </p>
               </div>
+			  
+			  
               <div class="w-col w-col-3">
                 <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+				<div id="design">
           <a href="#set-1" class="hi-icon hi-icon-earth">Partners</a>
+		  </div>
         </div>
-                <h4 class="our-process-sys">DEVELOP</h4>
-                <p class="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                <h4 class="our-process-sys">Design and Printing Services</h4>
+                <p class="process-paragraph">            </p>
               </div>
             </div>
           </div>
@@ -564,7 +591,7 @@ We believe that in today’s competitive world marketing is the backbone for the
       </div>
     </div>
   </div>
--->
+
 <!--///////////////////////////////////////////////////////
        // End Porfolio section 
        //////////////////////////////////////////////////////////-->
@@ -663,7 +690,6 @@ We believe that in today’s competitive world marketing is the backbone for the
       </div>
     </div>
   </div>
--->
 <!--///////////////////////////////////////////////////////
        // End Our-Plan section 
        //////////////////////////////////////////////////////////-->
@@ -950,8 +976,10 @@ We believe that in today’s competitive world marketing is the backbone for the
 			</div>
           </div>
           <div>
-            <div class="fotter-text"><p class="fotter-quote">“ Fortify Your Business ”</p>
-              <!-- <p class="copyright-area">©2014 ELEGANCE. ALL RIGHTS RESERVED,TEMPLATE BY&nbsp;<a href="https://carinotech.com" title="Carino Technologies" target="_blank">CARINO TECHNOLOGIES</a></p></div>
+		  <p class="fortify"></br>“ Fortify    Your   Business ”</p>
+            <!-- <div class="fotter-text"><p class="fotter-quote">“ Fortify    Your   Business ”</p>
+			<p>“ Fortify    Your   Business ”</p>
+              <p class="copyright-area">©2014 ELEGANCE. ALL RIGHTS RESERVED,TEMPLATE BY&nbsp;<a href="https://carinotech.com" title="Carino Technologies" target="_blank">CARINO TECHNOLOGIES</a></p></div>
             -->
 		  </div>
         </div>
@@ -974,5 +1002,83 @@ We believe that in today’s competitive world marketing is the backbone for the
   <script src="js/modernizr.js"></script>
   <script src="js/animation.js"></script>
 
+  <script type="text/javascript">
+  
+   var ogText="We offer unique range of marketing and sales support services specially designed keeping in mind needs and constraints of emerging businesses. We help our clients get most out of their marketing investments and efforts. We convert your vision into achievable goals and help you maximize your business potential.</br></br>We understand that as a start up or small business you don’t need all marketing activities throughout the year. We customize step by step most suitable service suite for your business so that you don’t end up spending more than required.";
+ 
+   var salesText=" <h2>Sales Support and Business Development</h2></br>From writing winning proposals to CRM strategy, from market research to case studies, we help you give systematic directions to your sales and business development efforts. We help you maximize the potential of your existing clients and move towards acquiring new clients. </br></br><uL><li>Writing and designing winning Proposals</li><li>Presentation preparation</li><li>Continuous research on existing and potential Clients</li><li>Market research & PoV on relevant industry, geography and competitors</li><li>Preparing and maintaining Case studies</li><li>Support and guidance in preparation of Sales demos and walk through</li><li>Preparing and implementing systematic Customer relationship strategies</li></ul>" ;
+   var contentText="<h2>Content and Communication</h2></br>Content is the key ingredient for the success of any business. Good content is what distinguishes your business from the masses and conveys the right message that appeals to the minds of clients. </br>Our content and communication experts can help you convert your thoughts into powerful content that grab attention of your clients and create connect between them and your company.</br></br><ul><li>Social media and blog management <li>Content writing for brochures, website and other marketing literatures<li>Website development in terms of advice on design and features; and partnering with existing web development agency for effective website development</li><li>Internal communication management like employee newsletters, announcements</li><li>Presentation help to sales team</li><li>Preparing and handling email campaign</li><li>Support in developing common pitch and communication for sales team</li>";
+   var brandText="<h2>Branding and Positioning </h2></br>Branding and positioning is very important to make your company stand out from the crowd. It is critical to make your branding and positioning efforts relevant for your target market.</br></br><ul><li>Assistance and guidance on Brand design and management</li><li>Assistance on work place branding</li><li>Defining communication standards & designing templates for all internal and external communications</li><li> Assistance in preparation of Vision,mission statement</li></ul>";
+   var designText="<h2>Design and Printing Services</h2></br>Effective design strengthens the message and creates a long lasting impression. Our team of expert designers can help you present your thoughts in a creative way and compliment your brand and communications efforts. </br></br><ul><li>Graphic design</li><li>Web Design</li><li>Brochures, flyers, product manuals and mailers</li><li>Newsletters & Direct mailers Case studies & Presentations</li><li>Multimedia demos and walk-throughs</li></ul>";
+  
+  
+  function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+  
+  var salesToggle =0;
+  var contentToggle =0;
+  var brandToggle =0;
+  var designToggle =0;
+  
+  	 document.getElementById('utkarshFocus1').onclick = function(){
+     document.getElementById('js-replace-content').innerHTML=ogText;
+      document.getElementById('utkarshFocus').focus();
+	  $('html, body').animate({
+        scrollTop: $("#utkarshFocus").offset().top
+    }, 500);
+      }
+  
+  
+   document.getElementById('sales').onclick = function(){
+     document.getElementById('js-replace-content').innerHTML=salesText;
+      document.getElementById('utkarshFocus').focus(); 
+	  $('html, body').animate({
+        scrollTop: $("#utkarshFocus").offset().top
+    }, 500);
+      }
+	
+	  
+	 document.getElementById('content').onclick = function(){
+     document.getElementById('js-replace-content').innerHTML=contentText;
+      document.getElementById('utkarshFocus').focus();
+	  $('html, body').animate({
+        scrollTop: $("#utkarshFocus").offset().top
+    }, 500);
+      }
+	 
+	 document.getElementById('brand').onclick = function(){
+     document.getElementById('js-replace-content').innerHTML=brandText;
+      document.getElementById('utkarshFocus').focus();
+	   $('html, body').animate({
+        scrollTop: $("#utkarshFocus").offset().top
+    }, 500);
+      }
+	  
+  document.getElementById('design').onclick = function(){
+     document.getElementById('js-replace-content').innerHTML=designText;
+      document.getElementById('utkarshFocus').focus();
+	   $('html, body').animate({scrollTop: $("#utkarshFocus").offset().top}, 500);}
+	   
+	 
+	  document.getElementById('js-replace-content').onclick = function(){
+     document.getElementById('js-replace-content').innerHTML=ogText;
+	  $('html, body').animate({
+        scrollTop: $("#utkarshFocus").offset().top
+    }, 500);
+      }
+	 
+	 
+	 document.getElementById('quickFix').onclick = function(){
+     document.getElementById('js-replace-content').innerHTML=ogText;
+	 }
+</script>
+
+  
+  
 </body>
 </html>

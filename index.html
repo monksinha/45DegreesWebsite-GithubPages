@@ -1025,55 +1025,63 @@ We believe that in today’s competitive world marketing is the backbone for the
   var brandToggle =0;
   var designToggle =0;
   
-  	 document.getElementById('utkarshFocus1').onhover = function(){
-     document.getElementById('js-replace-content').innerHTML=ogText;
-      document.getElementById('utkarshFocus').focus();
+  	 document.getElementById('utkarshFocus1').onclick = function(){
+     
 	  $('html, body').animate({
         scrollTop: $("#utkarshFocus").offset().top
     }, 500);
+    document.getElementById('js-replace-content').innerHTML=ogText;
+      document.getElementById('utkarshFocus').focus();
       }
   
   
-   document.getElementById('sales').onhover= function(){
-     document.getElementById('js-replace-content').innerHTML=salesText;
-      document.getElementById('utkarshFocus').focus(); 
+   document.getElementById('sales').onclick= function(){
+     
 	  $('html, body').animate({
         scrollTop: $("#utkarshFocus").offset().top
     }, 500);
+    document.getElementById('js-replace-content').innerHTML=salesText;
+      document.getElementById('utkarshFocus').focus(); 
       }
 	
 	  
-	 document.getElementById('content').onhover = function(){
-     document.getElementById('js-replace-content').innerHTML=contentText;
-      document.getElementById('utkarshFocus').focus();
+	 document.getElementById('content').onmouseover = function(){
+     wait(200);
 	  $('html, body').animate({
         scrollTop: $("#utkarshFocus").offset().top
     }, 500);
-      }
-	 
-	 document.getElementById('brand').onhover = function(){
-     document.getElementById('js-replace-content').innerHTML=brandText;
+    document.getElementById('js-replace-content').innerHTML=contentText;
       document.getElementById('utkarshFocus').focus();
+  }
+	 
+	 document.getElementById('brand').onclick = function(){
+     
 	   $('html, body').animate({
         scrollTop: $("#utkarshFocus").offset().top
     }, 500);
-      }
-	  
-  document.getElementById('design').onhover = function(){
-     document.getElementById('js-replace-content').innerHTML=designText;
+     document.getElementById('js-replace-content').innerHTML=brandText;
       document.getElementById('utkarshFocus').focus();
-	   $('html, body').animate({scrollTop: $("#utkarshFocus").offset().top}, 500);}
+      }
+	 
+
+  document.getElementById('design').onclick = function(){
+     
+	   $('html, body').animate({scrollTop: $("#utkarshFocus").offset().top}, 500);
+document.getElementById('js-replace-content').innerHTML=designText;
+      document.getElementById('utkarshFocus').focus();
+   }
 	   
 	 
-	  document.getElementById('js-replace-content').onhover = function(){
-     document.getElementById('js-replace-content').innerHTML=ogText;
+	  document.getElementById('js-replace-content').onclick = function(){
+     
 	  $('html, body').animate({
         scrollTop: $("#utkarshFocus").offset().top
     }, 500);
+    document.getElementById('js-replace-content').innerHTML=ogText;
       }
 	 
 	 
-	 document.getElementById('quickFix').onhover = function(){
+	 document.getElementById('quickFix').onclick = function(){
      document.getElementById('js-replace-content').innerHTML=ogText;
 	 }
 </script>
